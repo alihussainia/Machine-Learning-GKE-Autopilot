@@ -10,9 +10,6 @@ COPY . ./
 
 RUN ls -la $APP_HOME/
 
-# Extract models directory
-RUN unzip models.zip
-
 # Install dependencies
 RUN pip install -r requirements.txt
 
