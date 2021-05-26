@@ -9,7 +9,7 @@ This project shows how to deploy a machine learning web application on Google Ku
 1. Introduction.
 2. Setting-up Environment.
 3. Creating Machine Learning Model.
-4. Testing Streamlit Web App.
+4. Running Streamlit Web App.
 5. Creating Docker-Image in Google Container Registry.
 6. Creating GKE-Autopilot Cluster Template.
 7. Creating Deployment and Service.
