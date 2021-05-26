@@ -11,6 +11,9 @@ COPY . ./
 RUN ls -la $APP_HOME/
 
 # Install dependencies
+RUN unzip models.zip
+
+# Install dependencies
 RUN pip install -r requirements.txt
 
 # Run the streamlit on container startup
