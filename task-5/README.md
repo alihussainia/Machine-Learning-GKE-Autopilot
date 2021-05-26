@@ -9,3 +9,7 @@ mv ../task-5/Dockerfile .
 ```bash
 gcloud builds submit --tag gcr.io/ml-gke-project/dogimgclassifier .
 ```
+3. Change back the directory to main using:
+```bash
+cd ../
+```
