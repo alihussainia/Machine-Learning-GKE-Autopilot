@@ -167,6 +167,6 @@ else:
 st.write("Predicted Class :")
 with st.spinner('classifying.....'):
     label =np.argmax(model.predict(decode_img(image)),axis=1)
-    st.write(classes[label[0]])    
+    st.write(classes[label[0]][11:])    
 st.write("")
 st.image(image_out, caption='Classifying Dog Image', use_column_width=True)
