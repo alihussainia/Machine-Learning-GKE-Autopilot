@@ -7,6 +7,10 @@ kubectl create -f $WORKING_DIR/task-7/deployment.yaml
 ```
 2. Watch the deployment status using:
 ```bash
+kubectl get deploy --watch
+```
+3. Watch the deployment pods status using:
+```bash
 kubectl get pod --watch
 ```
 4. Deploy the `service.yaml` manifest file using:
