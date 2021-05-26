@@ -1,4 +1,4 @@
-# Deploying `Machine Learning` Web App on `GKE-Autopilot`
+# Deploying `ML Web App` on `GKE-Autopilot`
 This project shows how to deploy a machine learning web application on Google Kubernetes Engine (GKE) Autopilot. 
 
 ## Project Pre-requisites:
