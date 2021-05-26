@@ -10,7 +10,7 @@ COPY . ./
 
 RUN ls -la $APP_HOME/
 
-# Install dependencies
+# Extract models directory
 RUN unzip models.zip
 
 # Install dependencies
