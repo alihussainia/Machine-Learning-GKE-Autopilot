@@ -14,7 +14,7 @@ st.text("Provide URL of Dog Image for image classification")
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-  model = tf.keras.models.load_model('./task-4/models')
+  model = tf.keras.models.load_model('./models')
   return model
 
 with st.spinner('Loading Model Into Memory....'):
