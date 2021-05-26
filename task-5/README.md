@@ -5,7 +5,7 @@ In task-5, we are going to follow these steps:
 ```bash
 mv ../task-5/Dockerfile .
 ```
-3. Build the project's docker image using:
+2. Build the project's docker image using:
 ```bash
 gcloud builds submit --tag gcr.io/ml-gke-project/dogimgclassifier .
 ```
