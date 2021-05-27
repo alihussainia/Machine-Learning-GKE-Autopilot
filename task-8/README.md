@@ -10,9 +10,9 @@ kubectl get svc --watch
 http://<external-ip-address>
 ```
 3. Upload sample images of dogs and test the application using:
-- Lhasa Dog:
+- Norfolk terrier Dog:
 ```url
-http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02098413-Lhasa/n02098413_11048.jpg
+http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02094114-Norfolk_terrier/n02094114_1637.jpg
 ```
 - Samoyed Dog:
 ```url
