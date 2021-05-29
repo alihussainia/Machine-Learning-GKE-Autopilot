@@ -1,19 +1,21 @@
-# Creating Deployment and Service
-In task-7, we are going to follow these steps:
+# Testing the Web Application
+In task-8, we will follow these steps:
 
-1. Deploy the `deployment.yaml` manifest file using:
+1. Find the `external ip` using:
 ```bash
-kubectl create -f $WORKING_DIR/task-7/deployment.yaml
+kubectl get svc --watch
 ```
-2. Watch the deployment status using:
+2. Open a new tab in the browser and visit:
 ```bash
-kubectl get deploy --watch
+http://<external-ip-address>
 ```
-3. Watch the deployment pods status using:
-```bash
-kubectl get pod --watch
+3. Upload sample images of dogs and test the application using:
+- Norfolk terrier Dog:
+```url
+http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02094114-Norfolk_terrier/n02094114_1637.jpg
 ```
-4. Deploy the `service.yaml` manifest file using:
-```bash
-kubectl create -f $WORKING_DIR/task-7/service.yaml
+- Samoyed Dog:
+```url
+http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02111889-Samoyed/n02111889_11729.jpg
 ```
+Note: Replace external-ip-address with the external-ip found in the step 1.

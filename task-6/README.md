@@ -1,25 +1,19 @@
-# Creating GKE-Autopilot Cluster
+# Creating Deployment and Service
+In task-7, we are going to follow these steps:
 
-In the task-3, we are going to follow these steps:
-
-1. Set the `PROJECT_ID` environment variable using:
+1. Deploy the `deployment.yaml` manifest file using:
 ```bash
-export PROJECT_ID=<enter-your-project-id>
+kubectl create -f $WORKING_DIR/task-7/deployment.yaml
 ```
-2. Set the `CLUSTER_NAME` environment variable using:
+2. Watch the deployment status using:
 ```bash
-export CLUSTER_NAME=ml-gke-cluster
+kubectl get deploy --watch
 ```
-3. Create a `Kubernetes cluster` on GKE-Autopilot using:
+3. Watch the deployment pods status using:
 ```bash
-gcloud container clusters create-auto $CLUSTER_NAME \
-    --region us-west1 \
-    --project=$PROJECT_ID
+kubectl get pod --watch
 ```
-4. Connect to the `ml-gke-cluster` cluster using:
+4. Deploy the `service.yaml` manifest file using:
 ```bash
-gcloud container clusters get-credentials $CLUSTER_NAME \
-    --region us-west1 \
-    --project=$PROJECT_ID
+kubectl create -f $WORKING_DIR/task-7/service.yaml
 ```
-Reference: https://cloud.google.com/kubernetes-engine/docs/how-to/creating-an-autopilot-cluster

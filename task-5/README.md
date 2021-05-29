@@ -1,19 +1,25 @@
-# Creating `Docker-Image` in Google Container Registry
-In task-5, we are going to follow these steps:
+# Creating GKE-Autopilot Cluster
 
-1. Change directory to task-4 using:
+In the task-3, we are going to follow these steps:
+
+1. Set the `PROJECT_ID` environment variable using:
 ```bash
-cd task-4/
+export PROJECT_ID=<enter-your-project-id>
 ```
-2. Move Dockerfile to task-4 directory using:
+2. Set the `CLUSTER_NAME` environment variable using:
 ```bash
-mv ../task-5/Dockerfile .
+export CLUSTER_NAME=ml-gke-cluster
 ```
-3. Build the project's docker image using:
+3. Create a `Kubernetes cluster` on GKE-Autopilot using:
 ```bash
-gcloud builds submit --tag gcr.io/ml-gke-project/dogimgclassifier .
+gcloud container clusters create-auto $CLUSTER_NAME \
+    --region us-west1 \
+    --project=$PROJECT_ID
 ```
-4. Change back the directory to main using:
+4. Connect to the `ml-gke-cluster` cluster using:
 ```bash
-cd ../
+gcloud container clusters get-credentials $CLUSTER_NAME \
+    --region us-west1 \
+    --project=$PROJECT_ID
 ```
+Reference: https://cloud.google.com/kubernetes-engine/docs/how-to/creating-an-autopilot-cluster

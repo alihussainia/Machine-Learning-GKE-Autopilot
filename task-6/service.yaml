@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dogimageclassifier
+spec:
+  type: LoadBalancer
+  selector:
+    app: dogimageclassifier
+  ports:
+  - port: 80
+    targetPort: 8501

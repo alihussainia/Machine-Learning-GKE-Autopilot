@@ -1,28 +1,19 @@
-# Running Streamlit Web App `Locally`
-In task-4, we are going to follow these steps: 
+# Creating `Docker-Image` in Google Container Registry
+In task-5, we are going to follow these steps:
 
-1. Clone the repository locally using:
+1. Change directory to task-4 using:
 ```bash
-git clone https://github.com/alihussainia/Machine-Learning-GKE-Autopilot.git
+cd task-4/
 ```
-2. Change the directory to task-4 in the cloned repository folder using:
-```
-cd Machine-Learning-GKE-Autopilot/task-4/
-```
-3. Install all the dependencies using:
+2. Move Dockerfile to task-4 directory using:
 ```bash
-pip3 install -r requirements.txt
+mv ../task-5/Dockerfile .
 ```
-4. Run the `streamlit_app.py` file using:
+3. Build the project's docker image using:
 ```bash
-streamlit run streamlit_app.py
+gcloud builds submit --tag gcr.io/ml-gke-project/dogimgclassifier .
 ```
-5. Upload sample images of dogs and test the application using:
-- Norfolk terrier Dog:
-```url
-http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02094114-Norfolk_terrier/n02094114_1637.jpg
-```
-- Samoyed Dog:
-```url
-http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02111889-Samoyed/n02111889_11729.jpg
+4. Change back the directory to main using:
+```bash
+cd ../
 ```
