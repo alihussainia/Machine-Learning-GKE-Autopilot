@@ -1,13 +1,13 @@
 # Creating `Docker-Image` in Google Container Registry
-In task-5, we are going to follow these steps:
+In task-4, we are going to follow these steps:
 
-1. Change directory to task-4 using:
+1. Change directory to task-3 using:
 ```bash
-cd task-4/
+cd task-3/
 ```
-2. Move Dockerfile to task-4 directory using:
+2. Move Dockerfile to task-3 directory using:
 ```bash
-mv ../task-5/Dockerfile .
+mv ../task-4/Dockerfile .
 ```
 3. Build the project's docker image using:
 ```bash
