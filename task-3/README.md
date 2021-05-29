@@ -1,4 +1,4 @@
-# Running Streamlit Web App `Locally`
+# Running Streamlit Web App `Locally`:
 In task-3, we are going to follow these steps: 
 
 1. Clone the repository locally using:
