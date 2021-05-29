@@ -5,9 +5,9 @@ In task-3, we are going to follow these steps:
 ```bash
 git clone https://github.com/alihussainia/Machine-Learning-GKE-Autopilot.git
 ```
-2. Change the directory to task-4 in the cloned repository folder using:
+2. Change the directory to task-3 in the cloned repository folder using:
 ```
-cd Machine-Learning-GKE-Autopilot/task-4/
+cd Machine-Learning-GKE-Autopilot/task-3/
 ```
 3. Install all the dependencies using:
 ```bash
