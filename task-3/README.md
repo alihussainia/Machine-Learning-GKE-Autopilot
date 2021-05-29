@@ -1,5 +1,5 @@
 # Running Streamlit Web App `Locally`
-In task-4, we are going to follow these steps: 
+In task-3, we are going to follow these steps: 
 
 1. Clone the repository locally using:
 ```bash
