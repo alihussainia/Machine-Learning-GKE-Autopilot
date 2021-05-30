@@ -1,6 +1,6 @@
 # Creating GKE-Autopilot Cluster
 
-In the task-3, we are going to follow these steps:
+In the task-5, we are going to follow these steps:
 
 1. Set the `PROJECT_ID` environment variable using:
 ```bash
